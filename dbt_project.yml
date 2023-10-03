@@ -36,3 +36,12 @@ models:
     # Applies to all files under models/example/
     example:
       materialized: view
+
+# define our own data types for the columns we want
+seeds:
+  taxi_rides:
+    taxi_zone_lookup:
+      +column_types:
+        locationid: numeric
+
+  
