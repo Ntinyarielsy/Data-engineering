@@ -40,6 +40,6 @@ WHERE vendorid is not null
 
 {% if var('is_test_run', default=true) %}
 
-  limit 100
+  limit 1000
 
 {% endif %}
